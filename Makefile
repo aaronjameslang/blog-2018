@@ -18,4 +18,4 @@ venv/bin/aws:
 	. venv/bin/activate && pip install awscli
 
 deploy: build venv/bin/aws
-	. venv/bin/activate && aws s3 sync _site s3://aaronjameslang.com/blog
+	. venv/bin/activate && aws s3 sync dist s3://aaronjameslang.com/blog
