@@ -5,7 +5,13 @@ build: vendor
 	bundle exec jekyll build
 
 serve: vendor
-	bundle exec jekyll serve
+	bundle exec jekyll serve --draft --future
+
+draft: vendor
+	bundle exec jekyll draft
+
+publish: vendor
+	bundle exec jekyll publish
 
 venv/bin/aws:
 	virtualenv venv
