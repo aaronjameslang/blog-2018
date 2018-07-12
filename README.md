@@ -1,5 +1,10 @@
 # [blog](https://ajla.ng/blog) [![Build Status](https://travis-ci.org/aaronjameslang/blog.svg?branch=master)](https://travis-ci.org/aaronjameslang/blog)
 
+## Why
+
+I learn best by doing, and remember only by writing. Well, not remember so much, but it's a work-around for the forgetting.
+
+Posts are intended to be useful more than entertaining.
 
 ## Development
 
