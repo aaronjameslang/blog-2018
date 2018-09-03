@@ -1,7 +1,7 @@
 language: ruby
 script:
 - ./j build
-- git diff --exit-code -- . ':(exclude)docs/feed.xml'
+- git diff --exit-code -- . ':(exclude)docs/feed.xml' ':(exclude).bundle/config'
 env:
   global:
   - secure: 2BgYwEQn2y3syzfnh1ISwjdr5aTMCzwZ+85ZYDZRp8FlDAAyKDGaPlJj9FED/7VP3yWmIPi5mWJ6Fz7n1IrISpt9oAPZ0uggd3+/9NGnCKfcpD924+mnM/gcZZ3Jp7dXufkk916hPe9R70VGnaxu5QMHnMsBLKfQFGXMi8Gu8e4b3QsrB1Wrsczq9GG8rETFYgh6HXQkrBufhNI8QF/pPM0RvfD8vFCX3DYfQHHE75clSKJD98mE6bLv1q+aYdHR0FvuulQMNJKRBIMRM+PLi5fBvlvUQYzm4iTzouIViUZuRsR4xF9NnKYx4gMj3RIGnpedszUmmyiDNqpGhq51fjezKPFwEpVZvw3Uvae0S6OgeOLArUqsYQ7XOJEpEgQsL56lHotTPOiA0nA6VRcYGUXTZz9t6JRj0jQkq8VGAE3mHr9ca2BzxbLaPMDsU+67WztQVTkr7TMWOjZblcbvt7LuIZGJDKugyJ01XfUK+zkz37qjapjspwGifS9YaFE4rrP1TKvdnIMswkpTqI8aw48xiAKKBBVcJSSilGNO3FNZrN1oueWUY1Jcbi66q5hKldfqIOqqE8MY41BbtkUg8iTX2+Eeu1uFpQEirSumoDrnVJZqJy47As9VvlU4N1JOMrLiZvnc4u072OE/tdHObhAgPKG7k8OY1EaohcSU8Hc= # AWS_ACCESS_KEY_ID
