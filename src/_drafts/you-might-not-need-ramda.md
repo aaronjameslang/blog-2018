@@ -7,6 +7,8 @@ title: You Might Not Need Ramda
 
 Using native solutions is better because ...
 
+To find which Ramda functions you most commonly use, navigate to your project and run `ack -ho R\\.\\w* | sort | uniq -c | sort -h`
+
 ## [R.cond](https://ramdajs.com/docs/#cond)
 
 Many common uses of `cond` are simpler without it
