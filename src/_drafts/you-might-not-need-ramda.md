@@ -3,11 +3,33 @@ layout: post
 title: You Might Not Need Ramda
 ---
 
-[Ramda](https://ramdajs.com/docs/) was useful when it can out, but as newer versions of javascript and the browsers that support them are adopted, you might not need it as much as you think.
+[Ramda](https://ramdajs.com/docs/) was useful when it came out, but as newer versions of javascript and the browsers that support them are adopted, you might not need it as much as you think.
 
 Using native solutions is better because ...
 
 To find which Ramda functions you most commonly use, navigate to your project and run `ack -ho R\\.\\w* | sort | uniq -c | sort -h`
+
+## [R.add](https://ramdajs.com/docs/#add)
+
+The first of many simple math functions
+
+I'm sure you don't need this spelling out but:
+
+```js
+// Instead of this
+R.add(2, 3)
+// try this
+2 + 3
+
+// Instead of this
+R.add(7)
+// try this
+x => x + 7
+```
+
+## [R.addIndex](https://ramdajs.com/docs/#addIndex)
+
+I'll not go into detail for this one, but the example they give is to turn `R.map` into something similar to `Array.prototype.map`. I'd suggest just using `Array.prototype.map` if that's what you want.
 
 ## [R.cond](https://ramdajs.com/docs/#cond)
 

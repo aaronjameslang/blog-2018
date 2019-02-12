@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Git Flow Slim | blog.ajla.ng</title>
+<meta name="generator" content="Jekyll v3.8.3" />
+<meta property="og:title" content="Git Flow Slim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="What does slim mean?" />
+<meta property="og:description" content="What does slim mean?" />
+<link rel="canonical" href="http://localhost:4000/blog/2018/09/22/git-flow-slim.html" />
+<meta property="og:url" content="http://localhost:4000/blog/2018/09/22/git-flow-slim.html" />
+<meta property="og:site_name" content="blog.ajla.ng" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-09-22T20:02:24+12:00" />
+<script type="application/ld+json">
+{"description":"What does slim mean?","@type":"BlogPosting","url":"http://localhost:4000/blog/2018/09/22/git-flow-slim.html","headline":"Git Flow Slim","dateModified":"2018-09-22T20:02:24+12:00","datePublished":"2018-09-22T20:02:24+12:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2018/09/22/git-flow-slim.html"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/blog/feed.xml" title="blog.ajla.ng" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">blog.ajla.ng</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Git Flow Slim</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-09-22T20:02:24+12:00" itemprop="datePublished">Sep 22, 2018
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>What does slim mean?</p>
+
+<p>Don’t use -m when commiting</p>
+
+<p>To start with, write like you’re writing for tao/john. They know git pretty well, you just need to explain what the workflow is.</p>
+
+<p>Git gives us the tools to manage source code versioning and parralell development, but is flexible enough to let us make our own mistakes. By far the most popular git workflow recommended today is what has become known as Git Flow, originally described by <a href="https://nvie.com/posts/a-successful-git-branching-model/">V. Driessen</a>.</p>
+
+<p>As Git Flow builds on git to reduce bike shedding and room for error, so this work flow “Git Flow Slim” (for want of a better name) builds on git flow to cater to some specific difficulties encountered by some users, namely:</p>
+<ul>
+  <li>Divergent <code class="highlighter-rouge">master</code> and <code class="highlighter-rouge">develop</code> branches leading to merge conflicts</li>
+  <li>Busy multi-branch git log becoming inscrutable</li>
+  <li>Apparently succesful merges (or conflict resolutions) leading to broken code, particularly when this impacts other parraell streams of work</li>
+</ul>
+
+<p>I will also make a number of recommendations on practices that I have found useful, but which aren’t strictly nescessary to prevent the most intractable of scenarios.</p>
+
+<h2 id="the-golden-rule">The Golden Rule</h2>
+
+<p>If we take the principles of Git Flow as read, our only additional rule is:</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">master</code> must never be ahead of <code class="highlighter-rouge">develop</code></p>
+</blockquote>
+
+<p>This prevents two becoming ‘out of sync’ leading to issues when trying to merge. To see what this means in practical terms see <a href="#how-to-merge">here</a></p>
+
+<h2 id="walkthrough">Walkthrough</h2>
+
+<p>What follows will be a step by step guide to this workflow, structured for reference. It does not assume that you are already familiar with Git Flow, and the exmaples given should hopefully be intelligible to those in the process of learning git.</p>
+
+<h3 id="getting-started">Getting Started</h3>
+
+<h4 id="starting-a-new-repository">Starting a New Repository</h4>
+
+<ul>
+  <li>Create an initial commit</li>
+  <li>Create another branch called <code class="highlighter-rouge">develop</code></li>
+</ul>
+
+<h4 id="adpating-an-existing-reposity">Adpating an Existing Reposity</h4>
+
+<h3 id="changing-code">Changing Code</h3>
+
+<h4 id="branching">Branching</h4>
+
+<ul>
+  <li>Normally you’d create a new ‘topic branch’ for your work off of develop</li>
+  <li>If you’re working on a fix for a release, you’d want to branch off of the appropriate release branch</li>
+  <li>Don’t branch ‘hotfixes’ off of master, create a release branch first. See #slkdfj</li>
+</ul>
+
+<h4 id="committing">Committing</h4>
+
+<ul>
+  <li>Commit messages could follow convnetional commits</li>
+  <li>One commit per branch/topic/issue, this helps simplify the commit history.
+If you need to make a series of changes, either amend your commit with each change, or squash them once ready to merge.</li>
+</ul>
+
+<h4 id="merging">Merging</h4>
+
+<ul>
+  <li>Merge into the branch you initially branched off from, either develop or a release branch</li>
+  <li>If the merge results in a conflict, rebase your work onto the appropriate base branch, check the diff, re-test and try the merge again</li>
+  <li>If your base branch changes a lot before you can merge for whatever reason, it’s likely worth it to rebase anyway to be safe</li>
+</ul>
+
+<h3 id="preparing-for-a-release">Preparing for a Release</h3>
+
+<h4 id="branching-1">Branching</h4>
+
+<ul>
+  <li>Release branches are typically created from master (for urgent releases) or develop (for regular releases)</li>
+  <li>Release branches may be created from some point between master and develop if you have a good reason and know what you’re doing</li>
+  <li>Release branches may be created from a tagged version if you’re supporting a multi-vesion project, this is beyond the scope of this guide</li>
+</ul>
+
+<h4 id="committing-1">Committing</h4>
+
+<ul>
+  <li>Sometimes a release branch will pass testing immediately and you can skip straight to #merging</li>
+  <li>If the release requires fixes for released/unreleased bugs, follow the process from #hangeing code use the release as your base branch until the relase is satisfactory</li>
+</ul>
+
+<h4 id="merging-1">Merging</h4>
+
+<ul>
+  <li>The release branch, once ready must be merged into develop. Use a fast forawrd marge if possible, however often a ‘regular’ merge is required as the release will be behind develop.</li>
+  <li>TODO merge conflicts here</li>
+  <li>Once the release has been successfully merged into develop, and only then, can the relase be merged to master. This merge must be a fast-forward merge, or else a tiny divergence will be created between master and develop, opening the way for future anomalies. If you are unable to perform a fast forward merge, find out why. It is possible that this could occur if you have been preparing two release branches at once. The best option here is to prepare a new release, and cherry pick any fixes applied to this release branch.</li>
+</ul>
+
+<h2 id="contridictions-to-git-flow">Contridictions to Git Flow</h2>
+
+<ul>
+  <li>
+    <p>No <code class="highlighter-rouge">hotifx-*</code> branches</p>
+
+    <p>The distinction from release branches is rarely useful, and adds mental burden. See #preparing for a release</p>
+  </li>
+  <li>
+    <p>No ‘feature’ branches</p>
+
+    <p>Or rather we call them topic branches, which the original article suggests as an alternative. These branches may contain features, but equally could address bug fixes, documentation improvements, performance improvements, refactoring, etc.</p>
+  </li>
+  <li>
+    <p>No <code class="highlighter-rouge">--no-ff</code></p>
+
+    <p>We fast-forward merge where possible for a simpler commit history. The justification for avoiding fast forwards given in the original article:</p>
+    <blockquote>
+      <p>This avoids losing information about the historical existence of a feature branch and groups together all commits that together added the feature.</p>
+    </blockquote>
+
+    <p>does not apply, as our model only requires a single commit per feature, futher simplifyng the history. See #commiting</p>
+  </li>
+  <li>
+    <p>Some release branches are from master</p>
+
+    <p>A side effect of grouping hotfixes in with releases, is that the branches that come off master are now also called <code class="highlighter-rouge">release-*</code></p>
+  </li>
+  <li>
+    <p>Release branches are merged to develop first</p>
+
+    <p>In order to ensure master is never ahead of develop, nothing can be merged to master that hasn’t been merged to develop first.</p>
+  </li>
+</ul>
+
+  </div><a class="u-url" href="/blog/2018/09/22/git-flow-slim.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">blog.ajla.ng</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">blog.ajla.ng</li><li><a class="u-email" href="mailto:your-email@example.com">your-email@example.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/aaronjameslang"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">aaronjameslang</span></a></li><li><a href="https://www.linkedin.com/in/aaronjameslang"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#linkedin"></use></svg> <span class="username">aaronjameslang</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

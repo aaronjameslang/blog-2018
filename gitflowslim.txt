@@ -1,0 +1,137 @@
+Script started on Sat Sep 22 16:47:56 2018
+[1m[3m%[23m[1m[0m                                                                                                     k~\[0m[23m[24m[J[01;31m✘  [36m~[00m [K[?1h=[?2004hbbash[?1l>[?2004l
+kbash\bash-3.2$ mkdir my-project
+bash-3.2$ cd my-project/
+bash-3.2$ git init
+Initialized empty Git repository in /Users/aaronlang/my-project/.git/
+bash-3.2$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+bash-3.2$ git branch
+bash-3.2$ git branches[K[K[K[K[K[K[Kranch develop
+fatal: Not a valid object name: 'master'.
+bash-3.2$ git commit --allow-empty -m root
+[master (root-commit) a1910de] root
+bash-3.2$ git branch
+* [32mmaster[m
+bash-3.2$ git stats[Kus
+On branch master
+nothing to commit, working tree clean
+bash-3.2$ git log --graph --oneline[C[C[1@-[C[C[1@-[1@d[1@e[1@c[1@o[1@r[1@a[1@t[1@e[1@ 
+[?1049h[?1h=* [33ma1910de[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m root[m
+[3m(END)[23m[K[K[?1l>[?1049lbash-3.2$ git log --decorate --graph --oneline | cat
+* a1910de (HEAD -> master) root
+bash-3.2$ git branch develop
+bash-3.2$ git branch developlog --decorate --graph --oneline | cat
+* a1910de (HEAD -> master, develop) root
+bash-3.2$ git checkout --branch topic-DGI34[K[K[K[K[KMPJ34-equalise-subemissions[1Pemissions[1Pemissions[1Pemissionspemissionsoemissionslemissionsaemissionsremissionsoemissionsnemissions-emissions[C[C[C[C[C[C[C[C[C
+error: unknown option `branch'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --recurse-submodules[=<checkout>]
+                          control recursive updating of submodules
+    --progress            force progress reporting
+
+bash-3.2$ git checkout --branch topic-MPJ34-equalise-polaron-emissions[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Switched to a new branch 'topic-MPJ34-equalise-polaron-emissions'
+bash-3.2$ gi tl[K[K[K[Ki tl[K[K[Kt lcheckout -b topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6@-branch[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18Plog --decorate --graph --oneline | cat
+* a1910de (HEAD -> topic-MPJ34-equalise-polaron-emissions, master, develop) root
+bash-3.2$ echo EQUALISE POLARON [KS >> my.cc[Kode[K[K[K[K[K[K[Kexmaple.[K[K[K[K[K[Kample.code
+bash-3.2$ git add example.code 
+bash-3.2$ git stadd example.code [C[C[C[C[C[C[C[C[C[C[C[C[C[Cst[Katud[Ks
+On branch topic-MPJ34-equalise-polaron-emissions
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   example.code[m
+
+bash-3.2$ git commit [1Pstatuscommit --messaeg[K[Kge feat: equalise polarons, [K[K[1@M[1@P[1@J[1@3[1@4[1@ 
+error: pathspec 'MPJ34' did not match any file(s) known to git.
+error: pathspec 'equalise' did not match any file(s) known to git.
+error: pathspec 'polarons' did not match any file(s) known to git.
+bash-3.2$ git commit --message feat: MPJ34 equalise polarons[1@'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'
+[topic-MPJ34-equalise-polaron-emissions 901c81e] feat: MPJ34 equalise polarons
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.code
+bash-3.2$ git commit --message 'feat: MPJ34 equalise polarons'[2Pfeat: MPJ34 equalise polarons[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kadd example.code [C[C[C[C[C[C[C[C[C[Cecho EQUALISE POLARONS >> example.code[C[C[C[C[C[C[C[C[C[Cgit log --decorate --graph --oneline | cat
+* 901c81e (HEAD -> topic-MPJ34-equalise-polaron-emissions) feat: MPJ34 equalise polarons
+* a1910de (master, develop) root
+bash-3.2$ gco develop[K[K[K[K[K[K[K[K[K[Kit checkout develop
+Switched to branch 'develop'
+bash-3.2$ git checlout -b topic-MPJ38-modify-statioal[K[Knal [K-syt[Kstes[Kms[C[1P[1@k
+Switched to a new branch 'topic-MPJ38-modify-stational-systems'
+bash-3.2$ echogit checkout -b topic-MPJ38-modify-stational-systems[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdevelop[K[C[C[C[C[C[C[C[C[C[C[C[C[C[Clog --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pcheckout develop-b topic-MPJ38-modify-stational-systems[C[C[C[C[C[C[C[C[C[Cecho[Kgit checkout -b topic-MPJ38-modify-stational-systems[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdevelop[K[C[C[C[C[C[C[C[C[C[C[C[C[C[Clog --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit --message 'feat: MPJ34 equalise polarons'[2Pfeat: MPJ34 equalise polarons[C[C[C[C[C[C[C[C[C[C[C[C[C[Cstatus[Kadd example.code [C[C[C[C[C[C[C[C[C[Cecho EQUALISE POLARONS >> example.code[C[C[C[C[C[C[C[C[C[Cgit log --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccheckout -b topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Plog --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[4Pecho EQUALISE POLARONS >> example.code[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@M[1@o[1@d[1P[1P[1P[1@U[1@P[1@G[1@R[1@A[1@D[1@E[C[1@ [1@S[1@T[1@A[1@I[1@O[1P[1@O[1@N[1@A[1@R[1@Y[C[1@ [1@T[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+bash-3.2$ ga example.code 
+bash: ga: command not found
+bash-3.2$ git add example.code 
+bash-3.2$ git cadd example.code [C[C[C[C[C[C[C[C[C[C[C[5Pa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho UPGRADE STATIONARY  >> example.code[C[C[C[C[C[C[C[C[C[Cgit checkout -b topic-MPJ38-modify-stational-systems[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdevelop[K-b topic-MPJ38-modify-stational-systems[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdevelop[K[C[C[C[C[C[C[C[C[C[C[C[C[C[Clog --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit --message 'feat: MPJ34 equalise polarons'[2Pfeat: MPJ34 equalise polarons'feat: MPJ34 equalise polarons'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'[1P'8' 'm'o'd'i'f'y' 's't'a't'i'o'n'a'r'y'
+[topic-MPJ38-modify-stational-systems 74baf0a] feat: MPJ38 modify stationary
+ 1 file changed, 1 insertion(+)
+ create mode 100644 example.code
+bash-3.2$ git logcommit --message 'feat: MPJ38 modify stationary'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Padd example.code [C[C[C[C[C[C[C[C[C[C[C[5Pa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho UPGRADE STATIONARY  >> example.code[C[C[C[C[C[C[C[C[C[Cgit checkout -b topic-MPJ38-modify-stational-systems[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdevelop[K[C[C[C[C[C[C[C[C[C[C[C[C[C[Clog --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit --message 'feat: MPJ34 equalise polarons'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Plog --decorate --graph --oneline | cat
+* 74baf0a (HEAD -> topic-MPJ38-modify-stational-systems) feat: MPJ38 modify stationary
+* a1910de (master, develop) root
+bash-3.2$ git log --decorate --graph --oneline | cat[C[C[1@-[C[C[1@-[1@a[1@l[1@l[1@ 
+* 74baf0a (HEAD -> topic-MPJ38-modify-stational-systems) feat: MPJ38 modify stationary
+| * 901c81e (topic-MPJ34-equalise-polaron-emissions) feat: MPJ34 equalise polarons
+|/  
+* a1910de (master, develop) root
+bash-3.2$ gco deve[K[K[K[Ktopic-MPJ34-equalise-polaron-emissions[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[Co topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[Ci topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[Ct topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Ptopic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[1P topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[Ci topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[Ct topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ck topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Switched to branch 'topic-MPJ34-equalise-polaron-emissions'
+bash-3.2$ exho[K[K[Kcgit checkout topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Plog --all --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit --message 'feat: MPJ38 modify stationary'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[31Padd example.code [C[C[C[C[C[C[C[C[C[C[C[5Pa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho UPGRADE STATIONARY  >> example.code[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1@ [1@P[1@O[1@L[1@A[1@R[1@I[1@S[1@E[C[1@ [1@E[1@M[1@I[1@S[1@S[1@I[1@O[1@N[1@S[C
+bash-3.2$ cat example.code 
+EQUALISE POLARONS
+POLARISE EMISSIONS
+bash-3.2$ ga example.code 
+bash: ga: command not found
+bash-3.2$ git add example.code 
+bash-3.2$ git add example.code [C[C[C[C[C[C[C[C[C[C[C[5Pa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho POLARISE EMISSIONS >> example.code[C[C[C[C[C[C[C[C[C[C[22Pcat example.code [C[C[C[C[C[C[C[C[C[C[1Pga[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@it add[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kadd example.code [C[C[C[C[C[C[C[C[C[C[C[5Pa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho POLARISE EMISSIONS >> example.code[C[C[C[C[C[C[C[C[C[Cgit checkout topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Plog --all --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit --message 'feat: MPJ38 modify stationary'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kamend --no-edit
+[topic-MPJ34-equalise-polaron-emissions b1a1869] feat: MPJ34 equalise polarons
+ Date: Sat Sep 22 19:14:36 2018 +1200
+ 1 file changed, 2 insertions(+)
+ create mode 100644 example.code
+bash-3.2$ git commit --amend --no-edit[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Padd example.code [C[C[C[C[C[C[C[C[C[C[C[5Pa[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecho POLARISE EMISSIONS >> example.code[C[C[C[C[C[C[C[C[C[Cgit checkout topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Plog --all --decorate --graph --oneline | cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[6@all --[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+* b1a1869 (HEAD -> topic-MPJ34-equalise-polaron-emissions) feat: MPJ34 equalise polarons
+| * 74baf0a (topic-MPJ38-modify-stational-systems) feat: MPJ38 modify stationary
+|/  
+* a1910de (master, develop) root
+bash-3.2$ git checkout develop
+Switched to branch 'develop'
+bash-3.2$ git merge --ff-o;[Knly topic-MPJ34-equalise-polaron-emissions
+Updating a1910de..b1a1869
+Fast-forward
+ example.code | 2 [32m++[m
+ 1 file changed, 2 insertions(+)
+ create mode 100644 example.code
+bash-3.2$ git merge --ff-only topic-MPJ34-equalise-polaron-emissions[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccheckout develop[K[C[C[C[C[C[C[C[C[C[C[C[C[C[Clog --all --decorate --graph --oneline | cat
+* b1a1869 (HEAD -> develop, topic-MPJ34-equalise-polaron-emissions) feat: MPJ34 equalise polarons
+| * 74baf0a (topic-MPJ38-modify-stational-systems) feat: MPJ38 modify stationary
+|/  
+* a1910de (master) root
+bash-3.2$ exit
+[1m[3m%[23m[1m[0m                                                                                                     k~\[0m[23m[24m[J[01;32m✔  [36m~[00m [K[?1h=[?2004h[?2004l
+
+Script done on Mon Sep 24 14:39:24 2018
